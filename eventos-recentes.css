@@ -1,0 +1,51 @@
+@media (min-width: 1020px) {
+  * {
+    padding: 15;
+    margin: 15;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(https://wallpaperaccess.com/full/2140907.jpg);
+    z-index: 0.1;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-inline: 100%;
+      width: 300%;
+    }
+  }
+
+  .container-baners,
+  h1 {
+    color: aliceblue;
+    margin-left: 6%;
+    margin-top: 70px;
+  }
+
+  .container-baners {
+    max-width: 95%;
+    height: 95vh;
+    margin-left: 3%;
+    border-style: groove;
+    background-color: rgba(240, 248, 255, 0.112);
+    border: none;
+    border-radius: 15px;
+    position: fixed;
+    margin-top: 10px;
+  }
+
+  .baneres,
+  img {
+    max-width: 55%;
+    height: 60vh;
+    display: flex;
+    margin-left: 35px;
+    filter: drop-shadow(0 0 4px rgb(250, 248, 248));
+    position: relative;
+    border-radius: 15px;
+  }
+}

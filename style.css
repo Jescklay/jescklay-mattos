@@ -1,0 +1,140 @@
+@media (min-width: 1020px) {
+  * {
+    padding: 15;
+    margin: 15;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(https://wallpaperaccess.com/full/2140907.jpg);
+    z-index: 0.1;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    padding: 7px;
+    display: flex;
+    margin-right: 45px;
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  .menu a:hover {
+    color: aliceblue;
+    padding: 7px;
+    color: rgb(254, 167, 18);
+    border-radius: 15px;
+    box-shadow: 0px 7px 4px 0px;
+    transition: 1s;
+  }
+
+  .menu i {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: rgb(254, 167, 18);
+  }
+
+  .container-menu {
+    border-style: groove;
+    border-radius: 15px;
+    max-width: 90%;
+    margin-left: 5%;
+    background-color: rgba(180, 176, 176, 0.317);
+    box-shadow: 1px 1px 1px 1px;
+    color: rgb(254, 167, 18);
+    border: none;
+    padding: 1px;
+    margin-top: 15px;
+  }
+
+  .foto img {
+    max-width: 40%;
+    margin-left: 40%;
+    position: fixed;
+    animation: flutuar 2s infinite ease;
+  }
+
+  @keyframes flutuar {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+
+  .logo img {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 40%;
+  }
+
+  .btn-social a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    margin-left: 13px;
+  }
+
+  .btn-social a:hover {
+    color: aliceblue;
+    padding: 10px;
+    color: rgb(254, 167, 18);
+    border-radius: 15px;
+    box-shadow: 0px 7px 4px 0px;
+    transition: 1s;
+  }
+
+  .btn-social ul {
+    display: flex;
+    gap: 10%;
+    list-style: none;
+    margin-left: 5%;
+  }
+
+  .btn-social i {
+    color: rgb(254, 167, 18);
+    list-style: none;
+    margin-left: 5%;
+  }
+
+  .btn-social i {
+    margin-left: 15px;
+  }
+
+  .container-btn-social {
+    margin-top: 26%;
+    max-width: 40%;
+    padding: 4.1px;
+  }
+}
